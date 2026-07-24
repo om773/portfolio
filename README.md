@@ -17,7 +17,7 @@ A single-file, production-ready portfolio (`index.html`) built entirely from the
 - **Skill bars**: your resume doesn't list proficiency percentages, so the bar widths are illustrative (not a precise claim about skill level). Feel free to adjust the `data-fill` values in the Skills section to match how you'd actually rate yourself.
 - **Services pricing**: shown as "Contact for pricing" rather than invented numbers — add real starting prices once you've decided on them.
 - **Photo**: the hero uses your initials as a placeholder avatar. Swap in a real photo by replacing the `.hero-photo` div content with an `<img>` tag.
-- **Contact form**: points to a Formspree placeholder (`your-form-id`). Until you add a real Formspree (or other) endpoint, the form falls back to opening the visitor's email client instead.
+- **Contact form**: now wired to Formspree's email-only endpoint (`https://formspree.io/f/nriomp25@yahoo.com`), submitted via `fetch` so the page doesn't redirect. **One-time step required:** submit the form once yourself (or ask a friend to) — Formspree will send a confirmation email to `nriomp25@yahoo.com`; click the link in it, and every submission after that is delivered straight to that inbox. Until it's confirmed, or if the request ever fails (e.g. offline), the form falls back to opening the visitor's email client addressed to `nriomp25@yahoo.com`.
 - **Book a Meeting / Live Demo / Verify buttons**: linked as placeholders — swap in your Calendly link, deployed project URL, etc. once available.
 
 ## Tech used
